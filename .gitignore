@@ -1,0 +1,4 @@
+# node file
+*node_modules/
+
+*.vscode/
