@@ -1,4 +1,11 @@
-# node file
-*node_modules/
+#system file
+*.log
+*.svn
+*.DS_Store
 
-*.vscode/
+# node file
+node_modules/
+
+.vscode/
+.npm-debug.log
+npm-debug.log
