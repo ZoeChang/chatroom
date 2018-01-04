@@ -4,7 +4,8 @@
   "description": "simple chartroom used pure JS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "webpack-dev-server",
+    "build": "webpack"
   },
   "author": "zoe chang",
   "license": "ISC",
