@@ -1,10 +1,19 @@
 # chatroom.js
 simple chartroom used pure JS.
 
-### simple introduction
+### Simple introduction
 - srcoll to bottom while show new message
 - random text color
-- press Enter in textarea to send message
-    support  press Ctrl + Enter in textarea to make a new line
+- press `Enter` to send message
+    support to make a new line by press `Ctrl` + `Enter` in input field
 
-### simple usage
+### Simple usage
+refer to  `chatroom.js` and make an entry somewhere in your HTML file as below:
+```
+<div id="your_room_id"></div>
+```
+and run:
+```
+var room = document.querySelector('#your_room_id')
+var myRoom = new Chatroom(room)
+```

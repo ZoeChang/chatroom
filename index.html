@@ -9,56 +9,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Chart Room</title>
+    <title>ChatRoom</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <style>
-        .custRightCellClass {
-            display: inline-block;
-            border-radius: 10px;
-            border: 3px solid red;
-        }
-
-        .custLeftCellClass {
-            display: inline-block;
-            border-radius: 10px;
-            border: 3px solid darkblue;
-        }
-    </style>
-
-    <div id="roomA">
-        <div data-chatroom="room" style="border: 1px solid #e9e9e9; width:500px; height:500px; background: aliceblue; overflow:auto;">
-            <div role="chart_board" data-chatroom="talks"></div>
-        </div>
-
-        <div role="chart_input">
-            <label style="display:inline-block; vertical-align: middle;">U say:</label>
-            <textarea data-chatroom="youTalk" style="width: 250px;" onkeypress="return isEnter(event,this)"></textarea>
-            <button data-chatroom="youTalkBtn">Send</button>
-        </div>
-        <!-- <div name="chart_input">
-            <div style="display:inline-block;">Stranger say:</div>
-            <div style="display:inline-block;">
-                <textarea data-chatroom="otherTalk" style="width: 250px;"></textarea>
-            </div>
-            <div style="display:inline-block;">
-                <button data-chatroom="otherTalkBtn" id="btnB">Send</button>
-            </div>
-        </div> -->
-    </div>
-
+    <div id="RoomB"></div>
 
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <script src="./src/js/chartroom.js"></script>
+    <script src="./src/js/chatroom.js"></script>
     <script src="./src/js/main.js"></script>
-    <!-- <script src="./dist/bundle.js"></script> -->
-
 
 </body>
 
