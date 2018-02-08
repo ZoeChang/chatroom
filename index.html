@@ -9,11 +9,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEST</title>
+    <title>Chart Room</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 </head>
 
 <body>
@@ -32,32 +30,32 @@
     </style>
 
     <div id="roomA">
-        <div style="border: 1px solid #e9e9e9;" data-chatroom="talkswrap">
-            <div data-chatroom="rightcell" class="custRightCellClass"></div>
-            <div data-chatroom="leftcell" class="custLeftCellClass"></div>
+        <div data-chatroom="room" style="border: 1px solid #e9e9e9; width:500px; height:500px; background: aliceblue; overflow:auto;">
+            <div role="chart_board" data-chatroom="talks"></div>
         </div>
-        <div>
-            <div style="display:inline-block;">
-                <textarea data-chatroom="yourtalk" style="width: 250px;"></textarea>
-            </div>
-            <div style="display:inline-block;">
-                <button data-chatroom="btn" id="btnA">Send</button>
-            </div>
+
+        <div role="chart_input">
+            <label style="display:inline-block; vertical-align: middle;">U say:</label>
+            <textarea data-chatroom="youTalk" style="width: 250px;" onkeypress="return isEnter(event,this)"></textarea>
+            <button data-chatroom="youTalkBtn">Send</button>
         </div>
-        <div>
+        <!-- <div name="chart_input">
+            <div style="display:inline-block;">Stranger say:</div>
             <div style="display:inline-block;">
-                <textarea data-chatroom="othertalk" style="width: 250px;"></textarea>
+                <textarea data-chatroom="otherTalk" style="width: 250px;"></textarea>
             </div>
             <div style="display:inline-block;">
-                <button data-chatroom="btn" id="btnB">Send</button>
+                <button data-chatroom="otherTalkBtn" id="btnB">Send</button>
             </div>
-        </div>
+        </div> -->
     </div>
+
 
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <script src="./src/js/chartroom.js"></script>
     <script src="./src/js/main.js"></script>
     <!-- <script src="./dist/bundle.js"></script> -->
 
